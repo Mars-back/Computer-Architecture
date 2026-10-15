@@ -1,0 +1,119 @@
+    1  sudo update-locale LANG=en_US.UTF-8
+    2  sudo locale-gen en_US.UTF-8
+    3  sudo reboot
+    4  LANG=en_US.UTF-8 xdg-user-dirs-update --force
+    5  sudo reboot
+    6  -i
+    7  [200~sudo apt update~
+    8  sudo apt update
+    9  sudo apt install -y language-pack-en language-pack-gnome-en
+   10  sudo locale-gen en_US.UTF-8
+   11  sudo update-locale LANG=en_US.UTF-8 LANGUAGE=en_US:en
+   12  sudo localectl set-locale LANG=en_US.UTF-8 LANGUAGE=en_US:en
+   13  grep Language /var/lib/AccountsService/users/$USER
+   14  sudo sed -i 's/^Language=.*/Language=en_US.UTF-8/' /var/lib/AccountsService/users/$USER
+   15  [200~echo 'Language=en_US.UTF-8' | sudo tee -a /var/lib/AccountsService/users/$USER~
+   16  sudo reboot
+   17  uname -a
+   18  sudo apt update
+   19  cat /etc/apt/sources.list
+   20  sudo apt install vim
+   21  cd ~
+   22  cd Downloads
+   23  man ls
+   24  ls -la
+   25  apt download hello
+   26  ls
+   27  dpkg -i hello_*.deb
+   28  sudo dpkg -i hello_*.deb
+   29  cd /
+   30  sudo su
+   31  echo "hi all"
+   32  echo "$PWD hi all here!"
+   33  cd ~
+   34  touch hi.sh
+   35  echo $PATH
+   36  vi hi.sh
+   37  ./hi.sh
+   38  chmod a+x hi.sh
+   39  chmod 777 hi.sh
+   40  ./hi.sh
+   41  ./hi.sh Ukraine
+   42  mkdir scripts
+   43  cp hi.sh scripts/
+   44  cp scripts ~/Documents/
+   45  cp -r scripts ~/Documents/
+   46  cd scripts
+   47  mv hi.sh ..
+   48  cd ..
+   49  rm scripts
+   50  rm -r scripts
+   51  cd /bin
+   52  ls -l
+   53  cd ../.
+   54  cd ../..
+   55  cd ~
+   56  tar -cvf scripts.tar ~/Documents/scripts
+   57  cat /etc/hostname
+   58  cat /var/log/syslog
+   59  tail -n 20 /var/log/syslog
+   60  less /var/log/syslog
+   61  cd /
+   62  find . -name "dhcp"
+   63  find . -name "*dhcp*"
+   64  find . -iname "*dhcp*" | grep --color=auto -i dhcp
+   65  find . -iname "*dhcp*" | grep --color=auto -i etc
+   66  ping google.com
+   67  cd ~
+   68  ping google.com > ping.log &
+   69  date >> ping.log
+   70  sudo ping google.com &
+   71  vlvlc
+   72  sudo pkill ping
+   73  vlc
+   74  sudo apt install vlc
+   75  vlc
+   76  ls -l
+   77  cd /bin
+   78  ls
+   79  echo $PATH
+   80  set
+   81  whoami
+   82  cd /etc
+   83  ls
+   84  cd ..
+   85  cd lib
+   86  ls
+   87  dmesg
+   88  sudo dmesg
+   89  ls /dev
+   90  sudo dmesg -C
+   91  dmesg
+   92  sudo dmesg
+   93  df -h
+   94  cd /home
+   95  ls -l
+   96  lsmod
+   97  cd /proc
+   98  cat cpuinfo
+   99  echo 1 > /proc/sys/net/ipv4/ip_forward
+  100  sudo echo 1 > /proc/sys/net/ipv4/ip_forward
+  101  sudo su
+  102  history
+  103  history > ~/history_user.txt
+exit
+ifconfig
+apt install net-tools
+ifconfig
+ifconfig -a
+cd ~
+echo "vika" > 1.txt
+cat 1.txt
+echo "vasya" > 2.txt
+cat 2.txt
+diff 1.txt 2.txt
+history
+lspci
+exit
+history > /home/marian/history_root.txt
+exit
